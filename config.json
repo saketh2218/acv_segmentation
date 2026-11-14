@@ -1,0 +1,17 @@
+{
+  "data_root": null,
+  "require_official": false,
+  "smoke_test": false,
+  "image_size": 256,
+  "batch_per_gpu": 8,
+  "max_epochs": 20,
+  "patience": 21,
+  "learning_rate": 0.001,
+  "workers_per_gpu": 0,
+  "seed": 42,
+  "device": "cuda",
+  "processes": 2,
+  "limit_train": null,
+  "limit_val": null,
+  "started_at": 1794669848.152418
+}

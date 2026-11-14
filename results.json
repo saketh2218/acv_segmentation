@@ -1,0 +1,62 @@
+{
+  "training_processes": 2,
+  "official_test_split": true,
+  "smoke_test": false,
+  "elapsed_minutes": 10.014125005404155,
+  "results": {
+    "baseline": {
+      "background_IoU": 0.9310678810406695,
+      "pet_IoU": 0.8677378689573624,
+      "mIoU": 0.8994028749990159,
+      "test_confusion_matrix": [
+        [
+          135212699,
+          3574203
+        ],
+        [
+          6436343,
+          65676621
+        ]
+      ],
+      "parameters": 1927042,
+      "best_epoch": 39,
+      "epochs_run": 40,
+      "stop_reason": "epoch_cap",
+      "latency": {
+        "ms_per_image": 2.610674189999145,
+        "device": "Tesla T4",
+        "precision": "FP16 autocast",
+        "batch_size": 16,
+        "warmup": 10,
+        "repeats": 50
+      }
+    },
+    "dilated": {
+      "background_IoU": 0.9376813113025676,
+      "pet_IoU": 0.8811364571178459,
+      "mIoU": 0.9094088842102068,
+      "test_confusion_matrix": [
+        [
+          135267483,
+          3519419
+        ],
+        [
+          5470514,
+          66642450
+        ]
+      ],
+      "parameters": 1927042,
+      "best_epoch": 38,
+      "epochs_run": 40,
+      "stop_reason": "epoch_cap",
+      "latency": {
+        "ms_per_image": 2.6189608599997882,
+        "device": "Tesla T4",
+        "precision": "FP16 autocast",
+        "batch_size": 16,
+        "warmup": 10,
+        "repeats": 50
+      }
+    }
+  }
+}
